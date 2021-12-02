@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background: black;
+  padding-top: 100px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+#container-box {
+  width: 250px;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 2px 2px grey;
+          box-shadow: 0px 0px 2px 2px grey;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#container-box .input {
+  background: black;
+  color: white;
+  -webkit-box-shadow: 0px 0px 2px 2px grey;
+          box-shadow: 0px 0px 2px 2px grey;
+  height: 50px;
+  text-align: right;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px 10px 0;
+  border-radius: 5px;
+}
+
+#container-box .hide-extra-numbers {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#container-box #btn-box {
+  padding-left: 3%;
+}
+
+#container-box #btn-box .AC {
+  margin-bottom: 10px;
+  background: orange;
+}
+
+#container-box #btn-box button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+#container-box #btn-box #btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50px)[4];
+      grid-template-columns: repeat(4, 50px);
+  -ms-grid-rows: (50px)[4];
+      grid-template-rows: repeat(4, 50px);
+  gap: 10px;
+}
+
+#container-box #btn-box #btn .btn-num {
+  background: #423f3e;
+  color: white;
+}
+
+#container-box #btn-box #btn .btn-num:focus {
+  background: #8f8f8f;
+}
+
+#container-box #btn-box #btn .operand {
+  background: orange;
+}
+
+#container-box #btn-box #btn .operand:focus {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #container-box {
+    width: 100%;
+    margin: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+  #container-box .input {
+    height: 80px !important;
+    font-size: 55px !important;
+  }
+  #btn-box .AC {
+    height: 80px !important;
+    width: 80px !important;
+  }
+  #btn-box #btn {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (80px)[4] !important;
+        grid-template-columns: repeat(4, 80px) !important;
+    -ms-grid-rows: (80px)[4] !important;
+        grid-template-rows: repeat(4, 80px) !important;
+    gap: 10px !important;
+  }
+  #btn-box #btn button {
+    height: 80px !important;
+    width: 80px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
